@@ -11,7 +11,7 @@ if [ `gpio read 11` -eq 1 ];
 then
 
 echo 'Motion Detected: '`date +"%Y-%m-%d_%H-%M-%S"`
-(omxplayer -b -o local --no-osd /home/pi/vlada_vystava_FINAL.mov && sleep 7m && sleep 33s) 
+(omxplayer -b -o local --no-osd /home/pi/vlada_vystava_FINAL.mov & sleep 7m && sleep 33s) 
 
 
 else
